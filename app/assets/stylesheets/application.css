@@ -14,3 +14,8 @@
  *= require_self
  */
 @import 'bootstrap';
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+}
