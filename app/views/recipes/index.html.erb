@@ -2,34 +2,16 @@
 
 <h1>Recipes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Instructions</th>
-      <th>Main image</th>
-      <th>Thumb image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @recipes.each do |recipe| %>
-      <tr>
-        <td><%= recipe.title %></td>
-        <td><%= recipe.description %></td>
-        <td><%= recipe.instructions %></td>
-        <td><%= recipe.main_image %></td>
-        <td><%= recipe.thumb_image %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @recipes.each do |recipe| %>
+  <div>
+    <div><%= link_to recipe.title, recipe %></div>
+    <div><%= recipe.description %></div>
+    <div><%= image_tag recipe.thumb_image %></div>
+    
+  </div>
+<% end %>
 
-<br>
+<hr>
 
 <%= link_to 'New Recipe', new_recipe_path %>
