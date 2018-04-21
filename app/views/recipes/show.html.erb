@@ -8,6 +8,12 @@
         <p class="lead"><%= @recipe.description %></p>
       </div>
     </div>
+    <div>
+      <h2>Ingredients</h2>
+      <% @recipe.ingredients.each do |i| %>
+        <p><%= i.name %> <%= i.quantity %> <%= i.quant_type %></p>
+      <% end %>
+    </div>
   </div>
   <div class="col-md-8">
     <div class="recipe-image">
