@@ -1,8 +1,15 @@
 
-<div class="navbar">
-  <%= link_to 'Home', root_path %>
-  <%= link_to 'Recipes', recipes_path %>
-  <%= link_to 'Contact', pages_contact_path %>
-  <%= link_to 'Stuff', pages_misc_path %>
-</div>
-
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <%= link_to 'Home', root_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Recipes', recipes_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Contact', pages_contact_path, class: 'nav-link' %>
+  </li>
+  <li class="nav-item">
+    <%= link_to 'Stuff', pages_misc_path, class: 'nav-link' %>
+  </li>
+</ul>

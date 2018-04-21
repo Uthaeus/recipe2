@@ -2,15 +2,17 @@
 
 <h1>Recipes</h1>
 
-
-<% @recipes.each do |recipe| %>
-  <div>
-    <div><%= link_to recipe.title, recipe %></div>
-    <div><%= recipe.description %></div>
-    <div><%= image_tag recipe.thumb_image %></div>
-    
+<div class="row">
+  <div class="col-md-4">
+    <% @recipes.each do |recipe| %>
+      <div>
+        <div><%= link_to recipe.title, recipe %></div>
+        <div><%= recipe.description %></div>
+        <div><%= image_tag recipe.thumb_image %></div>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
 
 <hr>
 
