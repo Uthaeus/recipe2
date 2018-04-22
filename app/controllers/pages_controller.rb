@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def misc
 
   end
+
+  def menu
+
+  end
 end
