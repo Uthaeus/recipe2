@@ -10,6 +10,6 @@ class PagesController < ApplicationController
   end
 
   def menu
-
+    @items = Recipe.all
   end
 end
