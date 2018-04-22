@@ -1,9 +1,9 @@
 <div class="form-group nested-fields">
   <div><%= f.label :name %></div>
   <div><%= f.text_field :name %></div>
-  <div><%= f.label :quantity %></div>
+  <div><%= f.label :amount %></div>
   <div><%= f.number_field :quantity %></div>
-  <div><%= f.label :quant_type %></div>
+  <div><%= f.label :measurement %></div>
   <div><%= f.text_field :quant_type %></div>
 
   <%= link_to_remove_association 'Remove Ingredient', f, class: 'btn btn-success btn-sm' %>
