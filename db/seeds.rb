@@ -1,3 +1,7 @@
+User.create!(email: 'test@test.com', name: 'Homer', password: 'asdfasdf', password_confirmation: 'asdfasdf')
+
+puts "1 User created"
+
 10.times do |rec|
   Recipe.create!(title: "Recipe #{rec}",
                 description: "Something tasty",
